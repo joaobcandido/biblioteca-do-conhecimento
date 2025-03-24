@@ -1,10 +1,10 @@
 # como subir um container localstack com o podman
 ### 1. crie um arquivo com o nome docker-compose.yml na raiz do projeto:
 ````yml
-version: '3.8'
+version: '3.9'
 services:
   localstack:
-    image: docker.io/localstack/localstack:2.0.2
+    image: docker.io/localstack/localstack:latest
     container_name: local-aws-service
     environment:
      - SERVICES= s3,sqs,lambda,dynamodb
@@ -12,7 +12,7 @@ services:
      - AWS_SECRET_ACCESS_KEY=test
      - AWS_DEFAULT_REGION=us-east-1
     ports:
-      - "127.0.0.1:4566:4566"
+      - "4566:4566"
     volumes:
       - ./localstack-data:/var/lib/localstack
 ````
@@ -32,10 +32,7 @@ se deu tudo certo retorna algo como:
 ````bash
 aws-cli/2.24.24 Python/3.12.9 Linux/5.15.167.4-microsoft-standard-WSL2 exe/x86_64.ubuntu.24
 ````
-se nao tiver instalado pode usar esse comando:
-````bash
-sudo snap install aws-cli --classic
-````
+
 ### 4. criando um novo bucket pelo terminal:
 ````bash
 aws s3api create-bucket --bucket meu-bucket --endpoint-url=http://localhost:4566
