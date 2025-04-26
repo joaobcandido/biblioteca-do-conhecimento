@@ -5,3 +5,4 @@
 ### [comandos aws-cli](aws-cli.md)
 ### [como subir um container localstack com o podman](localstack.md)
 ### [links uteis](links.md)
+### [devops](devops.md)
