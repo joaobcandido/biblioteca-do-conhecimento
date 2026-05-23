@@ -10,4 +10,9 @@ Com o Node pronto, instale o gerador oficial do VS Code (Yo Code) e o gerenciado
 ```bash
 npm install -g yo generator-code @vscode/vsce
 ```
+## 2. Gerando o Projeto
+Abra o terminal na pasta onde deseja salvar o projeto e execute:
+````bash
+yo code
+````
 
