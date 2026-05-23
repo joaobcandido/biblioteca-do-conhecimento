@@ -2,4 +2,4 @@
 
 [lab-ec2-s3](https://congruous-lantana-d9f.notion.site/Lab-Servidor-EC2-S3-a59f80cc5e1e435e9c7e09842c59526c)
 
-[documentação markdoaw](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+[documentação markdown](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
