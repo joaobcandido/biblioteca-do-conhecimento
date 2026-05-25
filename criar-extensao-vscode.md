@@ -66,10 +66,6 @@ npm install -g @vscode/vsce
 ````bash
 vsce package
 ````
-💡 Nota: Se o comando falhar reclamando de falta de repositório Git ou do nome do publisher, você pode forçar a criação ignorando esses avisos com o comando:
-````bash
-vsce package --allow-missing-repository --no-validate
-````
 Esse comando vai ler seus arquivos, compilar o TypeScript (se houver um script de vscode:prepublish configurado) e gerar um arquivo com a extensão .vsix na raiz do seu projeto (ex: teste-01-0.0.1.vsix). Esse arquivo é o instalador da sua extensão.
 
   ### Passo 4: Instalar definitivamente no VS Code
